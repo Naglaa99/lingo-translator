@@ -34,3 +34,4 @@ Lingo Translator is a simple and user-friendly web application for translating t
 <hr>
 
 ## demo
+https://naglaa99.github.io/lingo-translator/
