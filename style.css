@@ -281,26 +281,31 @@ label:active {
 @media (max-width: 830px) {
   header {
     padding: 10px;
-    margin-bottom: 0px;
-    .logo {
-      gap: 4px;
-      img {
-        width: 55px;
-      }
-      span {
-        font-size: 17px;
-      }
-    }
-    .toggle-mode {
-      padding: 10px 15px;
-      background-color: rgb(221, 223, 224);
-      border-top-left-radius: 20px;
-      border-top-right-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-      i {
-        font-size: 22px;
-      }
-    }
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    gap: 4px;
+  }
+
+  header .logo img {
+    width: 55px;
+  }
+
+  header .logo span {
+    font-size: 18px;
+  }
+
+  header .toggle-mode {
+    padding: 10px 15px;
+    background-color: rgb(221, 223, 224);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  header .toggle-mode i {
+    font-size: 22px;
   }
 
   .container {
@@ -308,19 +313,20 @@ label:active {
     display: flex;
     flex-direction: column;
   }
+
   .card {
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
   }
-  .center {
-    .swap-position {
-      width: 40px;
-      height: 40px;
-      border: 3px solid rgb(223, 228, 232);
-      i {
-        font-size: 20px;
-        color: white;
-      }
-    }
+
+  .center .swap-position {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(223, 228, 232);
+  }
+
+  .center .swap-position i {
+    font-size: 20px;
+    color: white;
   }
 }
