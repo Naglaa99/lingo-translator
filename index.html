@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover a fast and accurate Translator App to translate text between multiple languages. Built with HTML, CSS, and JavaScript, our app offers real-time language translation for seamless communication." />
+    
+    <title>Lingo Translator</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- Boxicons for icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./images/translator-logo.png" alt="logo">
+            <span>Lingo Translator</span>
+        </div>
+
+        <div class="toggle-mode">
+            <i class='bx bx-sun'></i>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Input section -->
+        <div class="card input-wrapper">
+            <!-- Language selection for input -->
+            <div class="from">
+                <span class="heading">From:</span>
+                <div class="dropdown-container" id="input-language">
+                    <span class="dropdown">
+                        <i class='bx bx-globe'></i>
+                        <select></select>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Text area for input -->
+            <div class="text-area">
+                <textarea id="input-text" rows="10" placeholder="Enter your text here"></textarea>
+            </div>
+
+            <!-- Bottom section for controls and file upload -->
+            <div class="card-bottom">
+                <div class="control">
+                    <i id="from" class='bx bx-volume-full'></i>
+                    <i id="from" class='bx bx-copy-alt'></i>
+                </div>
+
+                <!-- Upload document section -->
+                <div class="upload-document">
+                    <label for="upload-document">
+                        <span id="upload-title">Choose File</span>
+                        <input type="file" id="upload-document" hidden accept=".txt">
+                        <i class='bx bx-cloud-upload'></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swap button for reversing translation directions -->
+        <div class="center">
+            <div class="swap-position">
+                <i class='bx bx-transfer'></i>
+            </div>
+        </div>
+
+        <!-- Output section -->
+        <div class="card output-wrapper">
+            <!-- Language selection for output -->
+            <div class="to">
+                <span class="heading">To:</span>
+                <div class="dropdown-container" id="output-language">
+                    <span class="dropdown">
+                        <i class='bx bx-globe'></i>
+                        <select></select>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Text area for output -->
+            <div class="text-area">
+                <textarea id="output-text" rows="10" placeholder="Translate text will appear here"></textarea>
+            </div>
+
+            <!-- Bottom section for controls and download -->
+            <div class="card-bottom">
+                <div class="control">
+                    <i id="to" class='bx bx-volume-full'></i>
+                    <i id="to" class='bx bx-copy-alt'></i>
+                </div>
+
+                <!-- Download translated text -->
+                <div class="download-document">
+                    <button id="download-button">
+                        <span>Download</span>
+                        <i class='bx bx-cloud-download'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="./javascript/countries.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
